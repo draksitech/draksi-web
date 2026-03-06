@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draksi Technologies LLP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .nav-link.active { border-bottom: 2px solid #6366f1; color: #6366f1; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <nav class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold tracking-tight text-indigo-400">
+                    DRAKSI<span class="text-white">TECHNOLOGIES</span>
+                </div>
+                <div class="flex space-x-8">
+                    <button onclick="showTab('home')" id="home-nav" class="nav-link active py-5 text-sm font-medium transition-colors hover:text-indigo-400">Home</button>
+                    <button onclick="showTab('about')" id="about-nav" class="nav-link py-5 text-sm font-medium transition-colors hover:text-indigo-400">About Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home" class="tab-content active">
+        <section class="py-20 px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                    Engineering the Future of SaaS & Cloud
+                </h1>
+                <p class="text-xl text-slate-400 mb-10">
+                    Designing, developing, and benchmarking world-class IT solutions for a global digital economy.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition">Explore Solutions</button>
+                    <button class="border border-slate-600 hover:bg-slate-800 px-8 py-3 rounded-lg font-semibold transition">Contact Sales</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-800/50 py-16">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <div class="text-indigo-400 text-3xl mb-4">☁️</div>
+                    <h3 class="text-xl font-bold mb-2">Cloud Platforms</h3>
+                    <p class="text-slate-400">Scalable cloud-based infrastructure and SaaS models designed for high availability.</p>
+                </div>
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <div class="text-indigo-400 text-3xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-2">Mobile & Web</h3>
+                    <p class="text-slate-400">Interactive web portals and mobile applications built with the latest tech stacks.</p>
+                </div>
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+                    <div class="text-indigo-400 text-3xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-bold mb-2">IT Consulting</h3>
+                    <p class="text-slate-400">Expert benchmarking, system integration, and software licensing services.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="about" class="tab-content">
+        <section class="py-20 px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-indigo-400 border-b border-slate-700 pb-4">About Draksi Technologies</h2>
+                <div class="space-y-6 text-lg text-slate-300 leading-relaxed">
+                    <p>
+                        Registered as an LLP, <strong>Draksi Technologies</strong> is a premier software development and IT consultancy firm dedicated to bridging the gap between complex business challenges and intuitive digital solutions.
+                    </p>
+                    <p>
+                        Our core mission revolves around the design, development, and implementation of high-performance software. From <strong>SaaS models</strong> and <strong>data processing systems</strong> to <strong>digital content aggregators</strong>, we provide the technical backbone for modern enterprises.
+                    </p>
+                    <blockquote class="border-l-4 border-indigo-500 pl-6 italic text-slate-400">
+                        "We deal in all types of internet-based technologies, serving commercial, industrial, and individual clients across both domestic and international markets."
+                    </blockquote>
+                    <p>
+                        Based in India but operating with a global mindset, our team of experts focuses on benchmarking and maintaining software to ensure it stays ahead of the rapid technological curve.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-10 mt-20">
+        <div class="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
+            <p>© 2026 Draksi Technologies LLP. All rights reserved.</p>
+            <p class="mt-2">Designing • Developing • Implementing • Maintaining</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            document.getElementById(tabId + '-nav').classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
