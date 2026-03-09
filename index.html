@@ -3,115 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draksi Technologies | AI-Driven Software Excellence</title>
+    <title>Draksi Technologies LLP | AI-Enhanced Software Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        .nav-link.active { border-bottom: 2px solid #818cf8; color: #818cf8; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
+        body { background-color: #0a0a0a; color: #d1d5db; }
+        .text-white-pure { color: #ffffff; }
+        .border-thin { border-color: rgba(255, 255, 255, 0.1); }
+        .hover-blue:hover { color: #3b82f6; transition: 0.3s; }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans selection:bg-indigo-500/30">
+<body class="font-sans">
 
-    <nav class="glass border-b border-slate-800 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-between items-center h-20">
-                <div class="text-2xl font-black tracking-tighter text-indigo-400">
-                    DRAKSI<span class="text-white">.AI</span>
-                </div>
-                <div class="flex space-x-10">
-                    <button onclick="showTab('home')" id="home-nav" class="nav-link active py-7 text-sm font-bold uppercase tracking-widest transition-all hover:text-indigo-300">Solutions</button>
-                    <button onclick="showTab('about')" id="about-nav" class="nav-link py-7 text-sm font-bold uppercase tracking-widest transition-all hover:text-indigo-300">Our Vision</button>
-                </div>
-            </div>
+    <nav class="max-w-6xl mx-auto px-6 py-10 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-widest text-white-pure">DRAKSI <span class="text-blue-500 font-light">TECHNOLOGIES</span></div>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-semibold">
+            <a href="#services" class="hover-blue">Services</a>
+            <a href="#about" class="hover-blue">Methodology</a>
+            <a href="#contact" class="hover-blue text-blue-500">Contact</a>
         </div>
     </nav>
 
-    <main id="home" class="tab-content active">
-        <section class="relative py-24 px-6 overflow-hidden">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-500/10 via-transparent to-transparent -z-10"></div>
-            <div class="max-w-4xl mx-auto text-center">
-                <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">
-                    The Future of Engineering
-                </span>
-                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
-                    Next-Gen <span class="bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">AI-Driven</span> Development
-                </h1>
-                <p class="text-xl text-slate-400 mb-12 leading-relaxed">
-                    We don't just write code; we architect intelligence. Building autonomous AI agents, predictive portals, and enterprise SaaS solutions powered by modern machine learning.
-                </p>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-full font-bold transition shadow-lg shadow-indigo-500/20">Build with Us</button>
-                    <button class="bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-full font-bold border border-slate-700 transition">View Our Portfolio</button>
-                </div>
-            </div>
-        </section>
+    <header class="max-w-6xl mx-auto px-6 py-24 border-b border-thin">
+        <h1 class="text-4xl md:text-6xl font-bold text-white-pure mb-8 leading-tight">
+            Software development,<br> 
+            <span class="text-blue-500">accelerated by AI.</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
+            Draksi Technologies LLP is a software services company. We leverage artificial intelligence to build, test, and deploy enterprise applications with superior efficiency.
+        </p>
+    </header>
 
-        <section class="py-20 bg-slate-900/40">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="grid md:grid-cols-3 gap-10">
-                    <div class="group p-8 bg-slate-900 rounded-3xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 shadow-2xl">
-                        <div class="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🤖</div>
-                        <h3 class="text-2xl font-bold mb-4">Autonomous AI Agents</h3>
-                        <p class="text-slate-400 leading-relaxed">Developing task-oriented agents that automate complex workflows, decision-making, and customer interactions with precision.</p>
-                    </div>
-                    <div class="group p-8 bg-slate-900 rounded-3xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-2xl">
-                        <div class="w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🌐</div>
-                        <h3 class="text-2xl font-bold mb-4">Predictive Portals</h3>
-                        <p class="text-slate-400 leading-relaxed">Interactive web platforms that leverage ML models to provide personalized experiences and real-time data insights.</p>
-                    </div>
-                    <div class="group p-8 bg-slate-900 rounded-3xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 shadow-2xl">
-                        <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🚀</div>
-                        <h3 class="text-2xl font-bold mb-4">AI-First SaaS</h3>
-                        <p class="text-slate-400 leading-relaxed">Custom software products with embedded intelligence, from probabilistic modeling to sophisticated data processing.</p>
-                    </div>
-                </div>
+    <section id="services" class="max-w-6xl mx-auto px-6 py-24">
+        <h2 class="text-xs uppercase tracking-[0.3em] text-blue-500 font-bold mb-16">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-16">
+            <div>
+                <h3 class="text-white-pure text-lg font-bold mb-4">Application Development</h3>
+                <p class="text-gray-500 leading-relaxed">Full-stack web and mobile solutions built using AI-assisted engineering to ensure rapid delivery and robust code quality.</p>
             </div>
-        </section>
-    </main>
-
-    <main id="about" class="tab-content">
-        <section class="py-24 px-6">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-4xl font-black mb-10 text-white leading-tight">Empowering Enterprises with Intelligent Technology</h2>
-                <div class="space-y-8 text-lg text-slate-400 leading-relaxed">
-                    <p>
-                        <strong>Draksi Technologies LLP</strong> was founded with a clear mandate: to redefine the standards of software development through the lens of Artificial Intelligence.
-                    </p>
-                    <p>
-                        We specialize in the end-to-end lifecycle of IT solutions—designing, maintaining, and benchmarking systems that don't just store data, but learn from it. Our focus spans across <strong>AI-driven software products</strong>, <strong>smart utility tools</strong>, and <strong>international IT consultancy</strong>.
-                    </p>
-                    <div class="p-8 bg-indigo-500/5 border border-indigo-500/20 rounded-2xl">
-                        <h4 class="text-indigo-400 font-bold mb-2 uppercase tracking-tighter text-sm">The Draksi Edge</h4>
-                        <p class="italic">"We leverage probabilistic modeling and advanced algorithmic frameworks to build resilient, scalable digital content aggregators and SaaS models for a global market."</p>
-                    </div>
-                </div>
+            <div>
+                <h3 class="text-white-pure text-lg font-bold mb-4">Legacy Modernization</h3>
+                <p class="text-gray-500 leading-relaxed">Upgrading existing enterprise systems to modern tech stacks. We use AI to refactor code and migrate data safely.</p>
             </div>
-        </section>
-    </main>
-
-    <footer class="border-t border-slate-900 py-12 mt-10">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-slate-500 text-sm">
-                © 2026 Draksi Technologies LLP. Based in Mysore, serving the World.
-            </div>
-            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400">
-                <a href="#" class="hover:text-indigo-400 transition">GitHub</a>
-                <a href="#" class="hover:text-indigo-400 transition">LinkedIn</a>
-                <a href="#" class="hover:text-indigo-400 transition">Contact</a>
+            <div>
+                <h3 class="text-white-pure text-lg font-bold mb-4">Digital Transformation</h3>
+                <p class="text-gray-500 leading-relaxed">Helping businesses integrate AI tools into their internal software development lifecycles to increase team productivity.</p>
             </div>
         </div>
+    </section>
+
+    <section id="about" class="bg-[#111] py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl font-bold text-white-pure mb-6">Our AI-First Approach</h2>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    We don't just "talk" about AI—we use it as a core tool in our service delivery. By integrating LLMs and automated reasoning into our workflow, we provide:
+                </p>
+                <div class="grid sm:grid-cols-2 gap-6 text-sm">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        <span>AI-Driven Quality Assurance</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        <span>Automated Documentation</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        <span>Rapid Prototyping</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        <span>Secure Code Generation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-32 border-t border-thin text-center">
+        <h2 class="text-3xl font-bold text-white-pure mb-6">Work with Draksi.</h2>
+        <p class="text-gray-500 mb-10 text-lg">Partner with an AI-enabled software services firm.</p>
+        <a href="mailto:contact@draksi.tech" class="text-blue-500 text-2xl font-medium border-b border-blue-500 pb-2 hover:text-blue-400 hover:border-blue-400 transition">
+            contact@draksi.com
+        </a>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-12 text-center text-gray-700 text-xs tracking-widest uppercase">
+        &copy; 2026 Draksi Technologies LLP. AI-First Software Engineering.
     </footer>
 
-    <script>
-        function showTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
-            document.getElementById(tabId + '-nav').classList.add('active');
-            window.scrollTo(0, 0);
-        }
-    </script>
 </body>
 </html>
